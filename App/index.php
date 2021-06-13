@@ -4,20 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Site</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,400;1,600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Daily Updates</a></li>
-      <li><a href="#">Manage Employee</a></li>
-      <li><a href="#">Employee Records</a></li>
-      <li><a href="#">Employee Records</a></li>
-    </ul>
-  </nav>
-  <div class="section">
-    <h1>Section one </h1>
-  </div>
+<?php 
+  include 'modules/navigation.php';
+  include 'pages/homepage.php';
+?>
 </body>
 </html>
