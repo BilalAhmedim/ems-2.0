@@ -16,13 +16,15 @@ maps      = require('gulp-sourcemaps');
 
 gulp.task('watch', function(){
   sync.init({
-    server: {
-      baseDir: './App/'
-    },
+    // server: {
+    //   baseDir: './App/',
+    // },
+    proxy: "http://localhost/",
+    port: 80,
     notify: false
   });
   watch('./App/css/**/**.css',gulp.series('compiled-stream'));
-  watch('./App/**.html', function(){
+  watch('./App/**.php', function(){
     sync.reload()
   });
   watch('./App/js/**.js', function(){
