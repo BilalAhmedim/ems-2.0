@@ -1,0 +1,23 @@
+<VirtualHost *:80>
+  DocumentRoot E:/site/ems
+  ServerName localhost
+</VirtualHost>
+
+<VirtualHost *:80>
+
+    ServerName ems.localhost
+
+    DocumentRoot "E:/site/ems-2.0/App"
+
+    <Directory "E:/site/ems-2.0/App">
+        Options All
+        AllowOverride All
+        Require all granted
+        Allow from all
+    </Directory>
+
+</VirtualHost>
+
+apache3 > conf > extra vhost.conf
+
+127.0.0.1       ems.localhost

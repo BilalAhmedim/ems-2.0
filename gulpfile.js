@@ -19,7 +19,7 @@ gulp.task('watch', function(){
     // server: {
     //   baseDir: './App/',
     // },
-    proxy: "http://localhost/",
+    proxy: "http://ems.localhost/",
     port: 80,
     notify: false
   });
