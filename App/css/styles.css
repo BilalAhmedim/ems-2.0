@@ -1,4 +1,7 @@
 @import "/_partials/_variables.css";
+@import "./_partials/_mixins.css";
 @import "normalize.css";
 @import "./_partials/_global.css";
 @import "./_partials/_navigation.css";
+@import "./_partials/_homepagesection.css";
+@import "./_partials/_form.css";

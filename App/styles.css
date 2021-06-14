@@ -307,4 +307,94 @@ nav ul li a:hover{
           background: #fff;
           box-shadow: 0px 1px 10px rgba(255,255,255,.3);
         }
+.section{
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+}
+.section .home_section{
+    width: 50vw;
+    height: calc(50vh - 29px);
+    float: left;
+    display: inline-block;
+    text-align: center;
+  }
+.section .home_section a{
+      padding: 30px;
+      line-height: calc(50vh - 29px);
+      color: #fff;
+      font-weight: 400;
+      font-size: 22px;
+    }
+.section .home_section.create{
+      background: #536ed2;
+    }
+.section .home_section.view{
+      background: #dac41d;
+    }
+.section .home_section.updates{
+      background: #3cb187;
+    }
+.section .home_section.manage{
+      background: #3B3B98;
+    }
+body.form{
+  background: rgba(0,0,0,.08);
+}
+.form.create{
+  width: 330px;
+  padding: 20px 0 40px 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #fff;
+  border-radius: 2px;
+  border-top: 3px solid #2C3A47;
+  box-shadow: 0px 4px 8px rgba(0,0,0, 0.2);
+  transition: box-shadow ease-out 200ms;
+}
+.form.create:hover{
+    box-shadow: 0px 12px 20px rgba(0,0,0, 0.2);
+  }
+.form-group{
+  margin-top: 30px;
+  padding: 0 40px ;
+}
+.form-group label{
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+    color: #2C3A47;
+  }
+.form-group input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #2C3A47;
+  }
+input[type=submit]{
+  width: 150;
+  height: 40px;
+  background: none;
+  border: 1px solid #2C3A47;
+  padding: 0 30px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+input[type=file]{
+  cursor: pointer;
+}
+::-moz-placeholder{
+  font-weight: 400;
+  padding-left: 10px;
+}
+:-ms-input-placeholder{
+  font-weight: 400;
+  padding-left: 10px;
+}
+::placeholder{
+  font-weight: 400;
+  padding-left: 10px;
+}
 /*# sourceMappingURL=styles.css.map */

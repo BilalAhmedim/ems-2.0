@@ -24,7 +24,7 @@ gulp.task('watch', function(){
     notify: false
   });
   watch('./App/css/**/**.css',gulp.series('compiled-stream'));
-  watch('./App/**.php', function(){
+  watch('./App/**/**.php', function(){
     sync.reload()
   });
   watch('./App/js/**.js', function(){

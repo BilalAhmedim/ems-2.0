@@ -1,0 +1,32 @@
+.section{
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  .home_section{
+    width: 50vw;
+    height: calc(50vh - 29px);
+    float: left;
+    display: inline-block;
+    text-align: center;
+    a{
+      padding: 30px;
+      line-height: calc(50vh - 29px);
+      color: $f-color;
+      font-weight: 400;
+      font-size: 22px;
+    }
+    &.create{
+      background: $create;
+    }
+    &.view{
+      background: $view;
+    }
+    &.updates{
+      background: $update;
+    }
+    &.manage{
+      background: $manage;
+    }
+  }
+}
