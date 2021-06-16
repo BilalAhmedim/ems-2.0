@@ -23,7 +23,7 @@ gulp.task('watch', function(){
     port: 80,
     notify: false
   });
-  watch('./App/css/**/**.css',gulp.series('compiled-stream'));
+  watch('./App/css/**/**.css',gulp.series('compiled-stream')); 
   watch('./App/**/**.php', function(){
     sync.reload()
   });

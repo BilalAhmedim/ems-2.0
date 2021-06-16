@@ -314,7 +314,7 @@ nav ul li a:hover{
   overflow: auto;
 }
 .section .home_section{
-    width: 50vw;
+    width: 50%;
     height: calc(50vh - 29px);
     float: left;
     display: inline-block;
@@ -341,12 +341,19 @@ nav ul li a:hover{
     }
 body.form{
   background: rgba(0,0,0,.08);
+  position: relative;
 }
+.form-header{
+  text-align: center;
+}
+.form-header h3{
+    padding-top: 10px;
+  }
 .form.create{
   width: 330px;
   padding: 20px 0 40px 0;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
   background: #fff;
   border-radius: 2px;
   border-top: 3px solid #2C3A47;
@@ -370,7 +377,12 @@ body.form{
     width: 250px;
     height: 40px;
     border: 1px solid #2C3A47;
+    padding-left: 10px;
+    outline: none;
   }
+.form-group input:focus{
+      border: 1px solid #27ae60;
+    }
 input[type=submit]{
   width: 150;
   height: 40px;
@@ -387,14 +399,29 @@ input[type=file]{
 }
 ::-moz-placeholder{
   font-weight: 400;
-  padding-left: 10px;
 }
 :-ms-input-placeholder{
   font-weight: 400;
-  padding-left: 10px;
 }
 ::placeholder{
   font-weight: 400;
-  padding-left: 10px;
 }
+.error-section{
+  position: absolute;
+  top: 68px;
+  right: 10px;
+  width: 450px;
+  background: #fff;
+  word-wrap: break-word;
+  padding: 0;
+  box-shadow: 0px 4px 8px rgba(0,0,0, 0.2);
+  transition: box-shadow ease-out 200ms;
+}
+.error-section:hover{
+    box-shadow: 0px 12px 20px rgba(0,0,0, 0.2);
+  }
+.error-section .p-error{
+    color: red;
+    padding: 20px;
+  }
 /*# sourceMappingURL=styles.css.map */

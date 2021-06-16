@@ -4,7 +4,7 @@
   display: block;
   overflow: auto;
   .home_section{
-    width: 50vw;
+    width: 50%;
     height: calc(50vh - 29px);
     float: left;
     display: inline-block;
