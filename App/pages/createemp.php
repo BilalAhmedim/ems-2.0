@@ -41,7 +41,7 @@
     </form>
   </div>
 
-  <div class="error-section">
+  <div class="error-section close">
     <div class="p-error" data-error='no-data'>
     
     </div>

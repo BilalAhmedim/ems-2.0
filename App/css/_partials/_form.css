@@ -68,11 +68,13 @@ input[type=file]{
   top: 68px;
   right: 10px;
   width: 450px;
+  max-width: 500px;
+  max-height: 500px;
   background: $f-color;
   word-wrap: break-word;
   padding: 0;
   box-shadow: 0px 4px 8px rgba(0,0,0, 0.2);
-  transition: box-shadow ease-out 200ms;
+  transition: all ease-out 200ms;
   &:hover{
     box-shadow: 0px 12px 20px rgba(0,0,0, 0.2);
   }
@@ -80,4 +82,23 @@ input[type=file]{
     color: red;
     padding: 20px;
   }
+  &.close{
+    max-width: 0px;
+    max-height: 0px;
+    overflow: hidden;
+
+  }
 }
+
+
+#dropDownCnt {
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 200ms ease;
+  }
+  #dropDown:hover #dropDownCnt{
+    max-height: 200px;
+    visibility: visible;
+    overflow: auto;
+  }
